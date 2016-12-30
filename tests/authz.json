@@ -1,0 +1,8 @@
+{"apiVersion":"abac.authorization.kubernetes.io/v1beta1","kind":"Policy","spec":{ "user":"*", "nonResourcePath": "*", "readonly": true}}
+{"user":"admin"}
+{"user":"controller-manager"}
+{"user":"scheduler"}
+{"user":"kubelet"}
+{"user":"proxy"}
+{"apiVersion":"abac.authorization.kubernetes.io/v1beta1","kind":"Policy", "spec": {"user":"system:serviceaccount:platform-services:kube-dns","namespace":"*","resource":"*","apiGroup":"*", "readonly": true}}
+
